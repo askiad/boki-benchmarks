@@ -17,7 +17,7 @@ services:
     restart: always
 
   boki-engine:
-    image: zjia/boki:sosp-ae
+    image: askiad/boki:sosp-ae
     hostname: faas-engine-{{.Task.Slot}}
     entrypoint:
       - /boki/engine
@@ -45,12 +45,12 @@ services:
     restart: always
 
   boki-controller:
-    image: zjia/boki:sosp-ae
+    image: askiad/boki:sosp-ae
     entrypoint:
       - /boki/controller
       - --zookeeper_host=zookeeper:2181
       - --metalog_replicas=3
-      - --userlog_replicas=3
+      - --userlog_replicas=8
       - --index_replicas=8
       # - --v=1
     depends_on:
@@ -58,7 +58,7 @@ services:
     restart: always
 
   boki-gateway:
-    image: zjia/boki:sosp-ae
+    image: askiad/boki:sosp-ae
     hostname: faas-gateway
     ports:
       - 8080:8080
@@ -81,7 +81,7 @@ services:
     restart: always
 
   boki-storage:
-    image: zjia/boki:sosp-ae
+    image: askiad/boki:sosp-ae
     hostname: faas-storage-{{.Task.Slot}}
     entrypoint:
       - /boki/storage
@@ -105,7 +105,7 @@ services:
     restart: always
 
   boki-sequencer:
-    image: zjia/boki:sosp-ae
+    image: askiad/boki:sosp-ae
     hostname: faas-sequencer-{{.Task.Slot}}
     entrypoint:
       - /boki/sequencer
@@ -123,7 +123,7 @@ services:
     restart: always
 
   retwis-init:
-    image: zjia/boki-retwisbench:sosp-ae
+    image: askiad/boki-retwisbench:sosp-ae
     entrypoint: ["/tmp/boki/run_launcher", "/retwisbench-bin/main", "1"]
     volumes:
       - /mnt/inmem/boki:/tmp/boki
@@ -135,7 +135,7 @@ services:
     restart: always
 
   retwis-register:
-    image: zjia/boki-retwisbench:sosp-ae
+    image: askiad/boki-retwisbench:sosp-ae
     entrypoint: ["/tmp/boki/run_launcher", "/retwisbench-bin/main", "2"]
     volumes:
       - /mnt/inmem/boki:/tmp/boki
@@ -146,57 +146,9 @@ services:
       - boki-engine
     restart: always
 
-  retwis-login:
-    image: zjia/boki-retwisbench:sosp-ae
-    entrypoint: ["/tmp/boki/run_launcher", "/retwisbench-bin/main", "3"]
-    volumes:
-      - /mnt/inmem/boki:/tmp/boki
-    environment:
-      - FAAS_GO_MAX_PROC_FACTOR=4
-      - GOGC=200
-    depends_on:
-      - boki-engine
-    restart: always
-
-  retwis-profile:
-    image: zjia/boki-retwisbench:sosp-ae
-    entrypoint: ["/tmp/boki/run_launcher", "/retwisbench-bin/main", "4"]
-    volumes:
-      - /mnt/inmem/boki:/tmp/boki
-    environment:
-      - FAAS_GO_MAX_PROC_FACTOR=4
-      - GOGC=200
-    depends_on:
-      - boki-engine
-    restart: always
-
-  retwis-follow:
-    image: zjia/boki-retwisbench:sosp-ae
-    entrypoint: ["/tmp/boki/run_launcher", "/retwisbench-bin/main", "5"]
-    volumes:
-      - /mnt/inmem/boki:/tmp/boki
-    environment:
-      - FAAS_GO_MAX_PROC_FACTOR=4
-      - GOGC=200
-    depends_on:
-      - boki-engine
-    restart: always
-
   retwis-post:
-    image: zjia/boki-retwisbench:sosp-ae
-    entrypoint: ["/tmp/boki/run_launcher", "/retwisbench-bin/main", "6"]
-    volumes:
-      - /mnt/inmem/boki:/tmp/boki
-    environment:
-      - FAAS_GO_MAX_PROC_FACTOR=4
-      - GOGC=200
-    depends_on:
-      - boki-engine
-    restart: always
-
-  retwis-post-list:
-    image: zjia/boki-retwisbench:sosp-ae
-    entrypoint: ["/tmp/boki/run_launcher", "/retwisbench-bin/main", "7"]
+    image: askiad/boki-retwisbench:sosp-ae
+    entrypoint: ["/tmp/boki/run_launcher", "/retwisbench-bin/main", "3"]
     volumes:
       - /mnt/inmem/boki:/tmp/boki
     environment:
