@@ -1,5 +1,5 @@
 [
     { "funcName": "RetwisInit", "funcId": 1, "minWorkers": 1, "maxWorkers": 1 },
-    { "funcName": "RetwisRegister", "funcId": 2, "minWorkers": 24, "maxWorkers": 24 },
-    { "funcName": "RetwisPost", "funcId": 3, "minWorkers": 24, "maxWorkers": 24 }
+    { "funcName": "RetwisRegister", "funcId": 2, "minWorkers": 48, "maxWorkers": 48 },
+    { "funcName": "RetwisPost", "funcId": 3, "minWorkers": 48, "maxWorkers": 48 }
 ]
