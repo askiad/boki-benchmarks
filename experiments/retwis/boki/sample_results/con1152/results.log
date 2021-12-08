@@ -1,0 +1,5 @@
+Benchmark runs for 2m0.269046165s, 28459.0 request per sec
+[RetwisPost]
+Throughput: 28459.0 requests per sec
+Transaction conflits: 6728 (0.20%)
+Latency: median = 13.056ms, tail (p99) = 209.580ms

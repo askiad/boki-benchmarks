@@ -1,0 +1,59 @@
+I1208 08:25:19.354660 Main     thread.cpp:126] Register main thread: tid=32983
+I1208 08:25:19.355013 Launcher thread.cpp:62] Start thread: Launcher/EL (tid=32984)
+I1208 08:25:19.355107 Launcher thread.cpp:87] Does not find cpuset setting for IO threads (can be set by FAAS_IO_THREAD_CPUSET)
+I1208 08:25:19.355120 Launcher thread.cpp:105] Does not find nice setting for IO threads (can be set by FAAS_IO_THREAD_NICE)
+I1208 08:25:19.355130 Launcher launcher.cpp:96] Launcher: Event loop starts
+I1208 08:25:19.355153 Launcher engine_connection.cpp:95] EngineConnection: Connected to engine, start writing handshake message
+I1208 08:25:19.356292 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 1
+I1208 08:25:19.356356 Launcher func_config.cpp:140] Load configuration for function RetwisInit[1]
+I1208 08:25:19.356372 Launcher func_config.cpp:140] Load configuration for function RetwisRegister[2]
+I1208 08:25:19.356378 Launcher func_config.cpp:140] Load configuration for function RetwisPost[3]
+I1208 08:25:19.356393 Launcher engine_connection.cpp:67] EngineConnection: Handshake done
+I1208 08:25:19.357558 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 2
+I1208 08:25:19.357588 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 3
+I1208 08:25:19.357600 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 4
+I1208 08:25:19.357609 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 5
+I1208 08:25:19.357618 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 6
+I1208 08:25:19.357626 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 7
+I1208 08:25:19.357632 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 8
+I1208 08:25:19.357639 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 9
+I1208 08:25:19.357656 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 10
+I1208 08:25:19.357693 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 11
+I1208 08:25:19.357710 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 12
+I1208 08:25:19.357720 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 13
+I1208 08:25:19.357731 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 14
+I1208 08:25:19.357744 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 15
+I1208 08:25:19.357754 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 16
+I1208 08:25:19.357764 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 17
+I1208 08:25:19.357779 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 18
+I1208 08:25:19.357792 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 19
+I1208 08:25:19.357803 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 20
+I1208 08:25:19.357828 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 21
+I1208 08:25:19.357838 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 22
+I1208 08:25:19.357848 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 23
+I1208 08:25:19.357860 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 24
+I1208 08:25:19.357872 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 25
+I1208 08:25:19.357887 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 26
+I1208 08:25:19.357896 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 27
+I1208 08:25:19.357907 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 28
+I1208 08:25:19.357924 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 29
+I1208 08:25:19.357937 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 30
+I1208 08:25:19.357963 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 31
+I1208 08:25:19.357974 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 32
+I1208 08:25:19.357991 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 33
+I1208 08:25:19.358007 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 34
+I1208 08:25:19.358019 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 35
+I1208 08:25:19.358034 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 36
+I1208 08:25:19.358069 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 37
+I1208 08:25:19.358078 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 38
+I1208 08:25:19.358093 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 39
+I1208 08:25:19.358102 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 40
+I1208 08:25:19.358126 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 41
+I1208 08:25:19.358148 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 42
+I1208 08:25:19.358160 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 43
+I1208 08:25:19.358178 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 44
+I1208 08:25:19.358198 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 45
+I1208 08:25:19.358210 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 46
+I1208 08:25:19.358228 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 47
+I1208 08:25:19.358239 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 48
+W1208 08:25:19.358251 Launcher engine_connection.cpp:170] EngineConnection: nread=0, will do nothing

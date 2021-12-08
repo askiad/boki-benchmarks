@@ -1,0 +1,11 @@
+I1208 08:36:45.745136 Main     thread.cpp:126] Register main thread: tid=38519
+I1208 08:36:45.745361 Launcher thread.cpp:62] Start thread: Launcher/EL (tid=38520)
+I1208 08:36:45.745449 Launcher thread.cpp:87] Does not find cpuset setting for IO threads (can be set by FAAS_IO_THREAD_CPUSET)
+I1208 08:36:45.745465 Launcher thread.cpp:105] Does not find nice setting for IO threads (can be set by FAAS_IO_THREAD_NICE)
+I1208 08:36:45.745477 Launcher launcher.cpp:96] Launcher: Event loop starts
+I1208 08:36:45.745496 Launcher engine_connection.cpp:95] EngineConnection: Connected to engine, start writing handshake message
+I1208 08:36:45.745603 Launcher buffer_pool.h:26] BufferPool[Launcher]: Allocate new buffer, current buffer count is 1
+I1208 08:36:45.745654 Launcher func_config.cpp:140] Load configuration for function RetwisInit[1]
+I1208 08:36:45.745667 Launcher func_config.cpp:140] Load configuration for function RetwisRegister[2]
+I1208 08:36:45.745670 Launcher func_config.cpp:140] Load configuration for function RetwisPost[3]
+I1208 08:36:45.745676 Launcher engine_connection.cpp:67] EngineConnection: Handshake done

@@ -1,0 +1,27 @@
+I1208 08:25:17.735503 Main     thread.cpp:126] Register main thread: tid=31431
+I1208 08:25:17.735574 Main     controller.cpp:23] Random seed is 0x00005b25
+I1208 08:25:17.736265 ZK/EL    thread.cpp:62] Start thread: ZK/EL (tid=31492)
+I1208 08:25:17.824897 ZK/EL    node_watcher.cpp:74] Seen new node engine_8 with address 10.0.7.59:25556
+I1208 08:25:17.841873 ZK/EL    node_watcher.cpp:74] Seen new node engine_4 with address 10.0.7.60:27281
+I1208 08:25:17.895879 ZK/EL    node_watcher.cpp:74] Seen new node engine_2 with address 10.0.7.63:24700
+I1208 08:25:17.905267 ZK/EL    node_watcher.cpp:74] Seen new node engine_6 with address 10.0.7.64:24075
+I1208 08:25:17.926091 ZK/EL    node_watcher.cpp:74] Seen new node engine_1 with address 10.0.7.62:21212
+I1208 08:25:18.027534 ZK/EL    node_watcher.cpp:74] Seen new node engine_5 with address 10.0.7.65:25383
+I1208 08:25:18.053223 ZK/EL    node_watcher.cpp:74] Seen new node engine_3 with address 10.0.7.66:27392
+I1208 08:25:18.221993 ZK/EL    node_watcher.cpp:74] Seen new node engine_7 with address 10.0.7.74:23758
+I1208 08:25:19.096045 ZK/EL    node_watcher.cpp:74] Seen new node gateway with address 10.0.7.84:22617
+I1208 08:25:19.206544 ZK/EL    node_watcher.cpp:74] Seen new node storage_4 with address 10.0.7.99:26917
+I1208 08:25:19.263144 ZK/EL    node_watcher.cpp:74] Seen new node storage_8 with address 10.0.7.100:23792
+I1208 08:25:19.316737 ZK/EL    node_watcher.cpp:74] Seen new node storage_5 with address 10.0.7.104:28680
+I1208 08:25:19.358122 ZK/EL    node_watcher.cpp:74] Seen new node storage_6 with address 10.0.7.108:22084
+I1208 08:25:19.377719 ZK/EL    node_watcher.cpp:74] Seen new node storage_3 with address 10.0.7.106:26177
+I1208 08:25:19.476724 ZK/EL    node_watcher.cpp:74] Seen new node storage_7 with address 10.0.7.115:21409
+I1208 08:25:19.480043 ZK/EL    node_watcher.cpp:74] Seen new node storage_2 with address 10.0.7.105:24258
+I1208 08:25:19.551441 ZK/EL    node_watcher.cpp:74] Seen new node storage_1 with address 10.0.7.116:29531
+I1208 08:25:19.684298 ZK/EL    node_watcher.cpp:74] Seen new node sequencer_1 with address 10.0.7.121:27604
+I1208 08:25:20.715302 ZK/EL    node_watcher.cpp:74] Seen new node sequencer_3 with address 10.0.7.125:29136
+I1208 08:25:27.036367 ZK/EL    node_watcher.cpp:74] Seen new node sequencer_2 with address 10.0.7.135:23366
+I1208 08:26:06.406318 ZK/EL    controller.cpp:261] Controller: Number of physical logs: 1
+I1208 08:26:06.406352 ZK/EL    controller.cpp:279] Controller: Create initial view with 3 sequencers, 8 engines, and 8 storages
+I1208 08:26:06.406384 ZK/EL    view.cpp:29] View 0 has 1 physical logs
+I1208 08:26:06.408524 ZK/EL    controller.cpp:71] Controller: View 0 is published as /faas/view/new0000000000
