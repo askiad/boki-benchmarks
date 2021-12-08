@@ -1,0 +1,4 @@
+[
+    { "funcName": "VoidInit", "funcId": 1, "minWorkers": 1, "maxWorkers": 1 },
+    { "funcName": "VoidNoop", "funcId": 2, "minWorkers": 12, "maxWorkers": 12 }
+]

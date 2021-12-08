@@ -12,13 +12,12 @@ import (
 
 type RegisterInput struct {
 	UserName string `json:"username"`
-	UserId  string `json:"userid"`
 }
 
 type RegisterOutput struct {
 	Success bool   `json:"success"`
 	Message string `json:"message,omitempty"`
-	UserId  string `json:"userid"`
+	UserId  string `json:"userId"`
 }
 
 type registerHandler struct {
@@ -66,7 +65,7 @@ func registerSlib(ctx context.Context, env types.Environment, input *RegisterInp
 	if committed, err := txn.TxnCommit(); err != nil {
 		return nil, err
 	} else if committed {
-		log.Printf("[counter-log] Registered counter with ID %s", input.UserId)
+		log.Printf("[counter-log] Registered counter with ID %s", userId)
 		return &RegisterOutput{
 			Success: true,
 			UserId:  userId,

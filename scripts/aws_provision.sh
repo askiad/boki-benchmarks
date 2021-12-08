@@ -18,7 +18,7 @@ aws --output text --region $AWS_REGION ec2 authorize-security-group-ingress \
     --group-id $SECURITY_GROUP_ID \
     --ip-permissions "IpProtocol=-1,FromPort=-1,ToPort=-1,UserIdGroupPairs=[{GroupId=$SECURITY_GROUP_ID}]"
 
-LOCAL_IP=$(ip addr | grep 'state UP' -A2 | tail -n1 | awk '{print $2}' | cut -f1  -d'/')
+LOCAL_IP=$(ip addr | grep 'state UP' -A3 | tail -n1 | awk '{print $2}' | cut -f1  -d'/')
 
 # Allow SSH traffic from current machine to the newly create security group
 aws --output text --region $AWS_REGION ec2 authorize-security-group-ingress \

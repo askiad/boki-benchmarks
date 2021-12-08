@@ -36,7 +36,7 @@ func buildPostRequest() utils.JSONValue {
 	body := utils.RandomString(FLAGS_bodylen)
 	userId := rand.Intn(FLAGS_num_users)
 	return utils.JSONValue{
-		"userid": fmt.Sprintf("%08x", userId),
+		"userId": fmt.Sprintf("%08x", userId),
 		"body":   body,
 	}
 }

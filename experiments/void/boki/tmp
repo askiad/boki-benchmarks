@@ -1,0 +1,42 @@
+Finish setup in 66.105 seconds
+Nothing found in stack: boki-experiment
+Ignoring unsupported options: restart
+
+Creating network boki-experiment_default
+Creating service boki-experiment_void-init
+Creating service boki-experiment_void-noop
+Creating service boki-experiment_zookeeper
+Creating service boki-experiment_zookeeper-setup
+Creating service boki-experiment_boki-sequencer
+Creating service boki-experiment_boki-engine
+Creating service boki-experiment_boki-gateway
+Creating service boki-experiment_boki-storage
+Creating service boki-experiment_boki-controller
+4096
+4096
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0Init done
+100    10  100    10    0     0   1250      0 --:--:-- --:--:-- --:--:--  1250
+Unable to find image 'askiad/boki-voidbench:sosp-ae' locally
+sosp-ae: Pulling from askiad/boki-voidbench
+7b1a6ab2e44d: Pulling fs layer
+4b89e4104213: Pulling fs layer
+bcd9458a748e: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+4f4fb700ef54: Waiting
+bcd9458a748e: Verifying Checksum
+bcd9458a748e: Download complete
+4b89e4104213: Verifying Checksum
+4b89e4104213: Download complete
+4f4fb700ef54: Verifying Checksum
+4f4fb700ef54: Download complete
+7b1a6ab2e44d: Verifying Checksum
+7b1a6ab2e44d: Download complete
+7b1a6ab2e44d: Pull complete
+4b89e4104213: Pull complete
+bcd9458a748e: Pull complete
+4f4fb700ef54: Pull complete
+Digest: sha256:7fcd1be8262dd736a23f9b72b7a7554268f0195364d23a53d431ba28708ad8db
+Status: Downloaded newer image for askiad/boki-voidbench:sosp-ae
+2021/12/05 15:12:41 [INFO] Start running for 180 seconds with concurrency of 12

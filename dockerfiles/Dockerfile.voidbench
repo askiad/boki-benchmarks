@@ -1,0 +1,13 @@
+FROM zjia/boki:sosp-ae as boki
+FROM golang:1.14-buster as builder
+
+COPY . /void
+COPY --from=boki /src/boki /src/boki
+RUN cd /void && ./build.sh
+
+FROM ubuntu:focal
+
+COPY --from=builder  /void/bin     /voidbench-bin
+COPY --from=boki     /boki/launcher  /boki/launcher
+
+WORKDIR /voidbench-bin

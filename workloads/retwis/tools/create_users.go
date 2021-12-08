@@ -30,7 +30,6 @@ func createUsers() {
 	for i := 0; i < FLAGS_num_users; i++ {
 		client.AddJsonFnCall(FLAGS_fn_prefix+"RetwisRegister", utils.JSONValue{
 			"username": fmt.Sprintf("testuser_%d", i),
-			"userid": fmt.Sprintf("%08x", i),
 		})
 	}
 	results := client.WaitForResults()

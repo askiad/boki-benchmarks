@@ -45,9 +45,11 @@ function push {
 
 case "$1" in
 build)
+    echo "building..."
     build
     ;;
 push)
+    echo "pushing..."
     push
     ;;
 esac
