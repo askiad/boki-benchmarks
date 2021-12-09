@@ -4,8 +4,8 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"strconv"
 	// "log"
-	"math/rand"
 
 	"cs.utexas.edu/zjia/faas/slib/statestore"
 	"cs.utexas.edu/zjia/faas/types"
@@ -41,18 +41,20 @@ func postSlib(ctx context.Context, env types.Environment, input *PostInput) (*Po
 
 	userObj := txn.Object(fmt.Sprintf("userid:%s", input.UserId))
 
-	// prevCnt := "-1"
+	prevCnt := "-1"
 	if value, _ := userObj.Get("counter"); value.IsNull() {
 		txn.TxnAbort()
 		return &PostOutput{
 			Success: false,
 			Message: fmt.Sprintf("Cannot find str field with ID %s", input.UserId),
 		}, nil
-	// } else {
-	// 	prevCnt = value.AsString()
+	} else {
+		prevCnt = value.AsString()
 	}
-	
-	newCnt := fmt.Sprintf("%d", rand.Intn(100))
+
+	cnt, _ := strconv.Atoi(prevCnt)
+	cnt = (cnt + 1) % 1000
+	newCnt := strconv.Itoa(cnt)
 	userObj.SetString("counter", newCnt)
 
 	// log.Printf("Request for counter with ID %s: counter was %s and setting to %s",
